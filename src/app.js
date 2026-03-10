@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // View engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 
 // Make BASE_URL available to all views
 app.locals.baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
